@@ -12,12 +12,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HiltDraggerDemo"
         tools:targetApi="31">
-        <!--Ex1_MainActivity Basic-->
-        <!--<activity
-            android:name=".Ex2_MainActivity"
-            android:exported="false" />-->
         <activity
+            android:name=".Ex4MainActivity"
+            android:exported="false" />
+        <!-- Ex1_MainActivity Basic -->
+        <!--
+<activity
             android:name=".Ex2_MainActivity"
+            android:exported="false" />
+        -->
+        <activity
+            android:name=".ex3.Ex3_MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -33,4 +33,12 @@ class MainActivity : AppCompatActivity() {
   ...
 }
      */
+
+    /*
+    There are three ways to define a binding in Hilt.
+
+1. Annotate the constructor with @Inject
+2. Use @Binds in a module
+3. Use @Provides in a module
+     */
 }
