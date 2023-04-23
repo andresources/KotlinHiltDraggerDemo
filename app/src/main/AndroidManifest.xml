@@ -12,9 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HiltDraggerDemo"
         tools:targetApi="31">
-        <activity
-            android:name=".Ex4MainActivity"
-            android:exported="false" />
+
         <!-- Ex1_MainActivity Basic -->
         <!--
 <activity
@@ -22,7 +20,7 @@
             android:exported="false" />
         -->
         <activity
-            android:name=".ex3.Ex3_MainActivity"
+            android:name=".ex4Interfaces.Ex4MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
