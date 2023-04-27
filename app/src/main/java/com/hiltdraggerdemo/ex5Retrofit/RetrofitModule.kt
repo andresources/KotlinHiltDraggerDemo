@@ -11,9 +11,9 @@ import javax.inject.Singleton
 @Module
 @InstallIn(SingletonComponent::class)
 class RetrofitModule {
-    @Provides
+    /*@Provides
     @Singleton
     fun provideRetrofit() :Retrofit{
         return APIClient.getClient()
-    }
+    }*/
 }
