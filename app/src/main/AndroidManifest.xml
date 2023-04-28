@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name=".MyApp"
         android:allowBackup="true"
@@ -22,7 +23,7 @@
             android:exported="false" />
         -->
         <activity
-            android:name=".ex6mvvm.ui.Ex6_MainActivity"
+            android:name=".ex7mvvmflows.view.Ex7_MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

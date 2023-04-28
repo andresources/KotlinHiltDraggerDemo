@@ -10,9 +10,11 @@ import retrofit2.Callback
 import retrofit2.Response
 import retrofit2.Retrofit
 import javax.inject.Inject
+import javax.inject.Named
+
 @AndroidEntryPoint
 class RetrofitMainActivity : AppCompatActivity() {
-    @Inject lateinit var retrofit: Retrofit
+    @Inject @Named("retro1") lateinit var retrofit: Retrofit
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_retrofit_main)

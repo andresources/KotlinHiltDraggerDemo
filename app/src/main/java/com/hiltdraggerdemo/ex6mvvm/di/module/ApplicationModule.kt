@@ -14,6 +14,7 @@ import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
+import javax.inject.Named
 import javax.inject.Singleton
 
 @Module
@@ -39,6 +40,7 @@ class ApplicationModule {
 
     @Provides
     @Singleton
+    @Named("retro2")
     fun provideRetrofit(okHttpClient: OkHttpClient, BASE_URL :String) : Retrofit =
          Retrofit.Builder()
             .addConverterFactory(MoshiConverterFactory.create())
@@ -48,7 +50,7 @@ class ApplicationModule {
 
     @Provides
     @Singleton
-    fun provideApiService(retrofit: Retrofit): ApiService = retrofit.create(ApiService::class.java)
+    fun provideApiService(@Named("retro2") retrofit: Retrofit): ApiService = retrofit.create(ApiService::class.java)
 
     @Provides
     @Singleton
